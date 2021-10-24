@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    color: rgb(60, 60, 60);
+}
+*:hover,*:active,*:focus{
+    border: none;
+    outline: none;
+}
+html,body{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(200, 200, 200);
+}
+.mainIndex{
+    width: 60%;
+    background-color: white;
+    margin: 6% auto;
+    padding: 40px 30px;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+}
+.dAllTasks1,.dAddTask{
+    text-align: left;
+    width: 90%;
+    margin: 50px auto 20px auto;
+}
+.tblAllTasks{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+/* .tblAllTasks tr{
+    display: none;
+} */
+.tblAllTasks tr:nth-child(even){
+    background-color: white;
+}
+.tblAllTasks tr:hover{
+    background-color: rgb(220, 220, 220);
+}
+.tblAllTasks tr td{
+    padding: 10px;
+    width: 5%;
+    text-align: center;
+}
+.tblAllTasks tr td:nth-child(1){
+    width: 90%;
+    text-align: left;
+}
+.btnTbl{
+    background-color: transparent;
+}
+.edit{
+    color: purple;
+}
+.delete{
+    color: red;
+}
+.edit:hover,.delete:hover{
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+}
+.formAddTask{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: baseline;
+}
+.inpAddTask{
+    background-color: rgb(220, 220, 220);
+    width: 80%;
+    padding: 10px;
+}
+.inpAddTask:hover{
+    background-color: rgb(200, 200, 200);
+}
+.btnAddTask{
+    color: white;
+    background-color: rgb(29, 63, 255);
+    font-weight: bold;
+    width: 20%;
+    padding: 10px;
+    transition: all .2s;
+}
+.btnAddTask:hover{
+    background-color: rgb(13, 27, 109);
+    letter-spacing: 2px;
+}
+.dPagination{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 15px;
+    display: flex;
+}
+.dPagination button{
+    padding: 2px;
+    width: 25px;
+    background-color: rgb(29, 63, 255);
+    color: white;
+    cursor: pointer;
+}
+.dPagination button:hover{
+    background-color: rgb(19, 37, 134);
+}
+.activeBtnPag{
+    background-color: rgb(9, 18, 68) !important;
+}
+.dTaskUploaded{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(102, 102, 102, 0.4);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.d2TaskUploaded{
+    width: 50%;
+    min-height: 200px;
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 0px 0px 5px gray;
+    text-align: center;
+}
+.dTUBtns{
+    margin-top: 50px;
+}
+.btnCancel, .btnEdit{
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    transition: all .2s;
+}
+.btnCancel:hover, .btnEdit:hover{
+    background-color: rgb(7, 14, 53);
+}
+.btnCancel{
+    background-color: rgb(29, 63, 255);
+}
+.btnEdit{
+    background-color: rgb(13, 27, 109);
+}
+.tblTaskUploaded{
+    margin: 50px auto 0px auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.tblTaskUploaded tbody tr td{
+    padding: 5px;
+}
+.tblTaskUploaded tbody tr td:nth-child(2){
+    width: 70%;
+}
+.inpEdit{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}

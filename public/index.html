@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- main -->
+    <main class="mainIndex">
+        <h1>Task manager</h1>
+        <!-- all tasks -->
+        <div class="dAllTasks1">
+            <h2>Current tasks:</h2>
+            <!-- table of all tasks -->
+            <table class="tblAllTasks" id="tblAllTasks">
+                <tbody id="tbodyTasks"></tbody>
+            </table>
+            <!-- pagination -->
+            <div class="dPagination" id="dPagination"></div>
+        </div>
+        <!-- add task -->
+        <div>
+            <div class="dAddTask">
+                <h2>Add Task:</h2>
+                <div class="formAddTask">
+                    <input type="text" name="new_task" id="newTask" class="inpAddTask" placeholder="New task...">
+                    <input type="submit" class="btnAddTask" id="btnAddNewTask" value="Submit" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- div where the uploaded task will be display over all elements -->
+    <div class="dTaskUploaded">
+        <div class="d2TaskUploaded">
+            <h2>Edit Task</h2>
+            <table class="tblTaskUploaded"></table>
+            <div class="dTUBtns">
+                <button class="btnEdit">Edit</button>
+                <button class="btnCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"
+     integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- my js files -->
+    <script src="./index.js"></script>
+</body>
+</html>
